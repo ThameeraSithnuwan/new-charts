@@ -168,7 +168,7 @@ jobs:
           aws-region: ${{ env.region }}
       - name: 'Run :: Login to Amazon ECR'
         id: skyu-login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@v2
       - name: 'Run :: Check if image already exists'
         id: check-image-existence-step-id
         run: |2-
